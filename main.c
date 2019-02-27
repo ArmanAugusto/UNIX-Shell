@@ -1,9 +1,6 @@
 /*
  * Author:          Arman Augusto
- * ID:              #004588816
- * Course:          CS 433 - Operating Systems (Tue/Thur 9:00am-10:15am)
- * Instructor:      Dr. Xiaoyu Zhang
- * Assignment:      Programming Assignment 2 - UNIX Shell
+ * Program Title:   UNIX Shell
  * Description:     osh> UNIX shell with an included history feature.
  *                  Enter '!!' command for history feature
  *                  Enter 'exit' or CTRL + c to exit the program
@@ -33,13 +30,6 @@ int formatCmd(char inputBuffer[], char *args[],int *flag); // formats command
 /******************************************************************************/
 /* main driver ****************************************************************/
 int main(void) {
-    printf("Author:         Arman Augusto\n");
-    printf("ID:             #004588816\n");
-    printf("Course:         CS 433 - Operating Systems (Tue/Thur 9:00am-10:15am)\n");
-    printf("Instructor:     Dr. Xiaoyu Zhang\n");
-    printf("Assignment:     Programming Assignment 2 - UNIX Shell\n");
-    printf("\nCreated on Tuesday, February 27, 2019\n");
-    
     char inputBuffer[MAX_LINE]; /* buffer to hold the input command */
     int flag; // equals 1 if a command is followed by "&"
     char *args[MAX_LINE/2 + 1]; /* command line arguments */
